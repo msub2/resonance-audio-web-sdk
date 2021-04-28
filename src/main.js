@@ -21,20 +21,34 @@
 
  'use strict';
 
+import ResonanceAudio from './resonance-audio.js';
 
-// Main module.
-exports.ResonanceAudio = require('./resonance-audio.js');
+// Gives tests access to ResonanceAudio
+window.ResonanceAudio = ResonanceAudio
 
+import Attenuation from './attenuation.js';
+import Directivity from './directivity.js';
+import EarlyReflections from './early-reflections.js';
+import Encoder from './encoder.js';
+import LateReflections from './late-reflections.js';
+import Listener from './listener.js';
+import Room from './room.js';
+import Source from './source.js';
+import Tables from './tables.js';
+import Utils from './utils.js';
+import Version from './version.js';
 
 // Testable Submodules.
-exports.ResonanceAudio.Attenuation = require('./attenuation.js');
-exports.ResonanceAudio.Directivity = require('./directivity.js');
-exports.ResonanceAudio.EarlyReflections = require('./early-reflections.js');
-exports.ResonanceAudio.Encoder = require('./encoder.js');
-exports.ResonanceAudio.LateReflections = require('./late-reflections.js');
-exports.ResonanceAudio.Listener = require('./listener.js');
-exports.ResonanceAudio.Room = require('./room.js');
-exports.ResonanceAudio.Source = require('./source.js');
-exports.ResonanceAudio.Tables = require('./tables.js');
-exports.ResonanceAudio.Utils = require('./utils.js');
-exports.ResonanceAudio.Version = require('./version.js');
+ResonanceAudio.Attenuation = Attenuation
+ResonanceAudio.Directivity = Directivity
+ResonanceAudio.EarlyReflections = EarlyReflections
+ResonanceAudio.Encoder = Encoder
+ResonanceAudio.LateReflections = LateReflections
+ResonanceAudio.Listener = Listener
+ResonanceAudio.Room = Room
+ResonanceAudio.Source = Source
+ResonanceAudio.Tables = Tables
+ResonanceAudio.Utils = Utils
+ResonanceAudio.Version = Version
+
+export default ResonanceAudio 

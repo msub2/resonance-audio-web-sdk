@@ -22,7 +22,7 @@
 'use strict';
 
 // Internal dependencies.
-const Utils = require('./utils.js');
+import Utils from './utils.js'
 
 
 /**
@@ -246,4 +246,4 @@ EarlyReflections.prototype.setRoomProperties = function(dimensions,
 };
 
 
-module.exports = EarlyReflections;
+export default EarlyReflections;

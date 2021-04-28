@@ -22,8 +22,8 @@
 'use strict';
 
 // Internal dependencies.
-const Tables = require('./tables.js');
-const Utils = require('./utils.js');
+import Tables from './tables.js'
+import Utils from './utils.js'
 
 
 /**
@@ -215,4 +215,4 @@ Encoder.validateAmbisonicOrder = function(ambisonicOrder) {
 };
 
 
-module.exports = Encoder;
+export default Encoder;

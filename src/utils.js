@@ -483,7 +483,7 @@ Utils.log = function() {
  */
 Utils.normalizeVector = function(v) {
   let n = Math.sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
-  if (n > exports.EPSILON_FLOAT) {
+  if (n > Utils.EPSILON_FLOAT) {
     n = 1 / n;
     v[0] *= n;
     v[1] *= n;
@@ -508,4 +508,4 @@ Utils.crossProduct = function(a, b) {
   ];
 };
 
-module.exports = Utils;
+export default Utils;

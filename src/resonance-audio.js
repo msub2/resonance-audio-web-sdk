@@ -23,11 +23,11 @@
 
 
 // Internal dependencies.
-const Listener = require('./listener.js');
-const Source = require('./source.js');
-const Room = require('./room.js');
-const Encoder = require('./encoder.js');
-const Utils = require('./utils.js');
+import Listener from './listener.js'
+import Source from './source.js'
+import Room from './room.js'
+import Encoder from './encoder.js'
+import Utils from './utils.js'
 
 
 /**
@@ -240,4 +240,4 @@ ResonanceAudio.prototype.setSpeedOfSound = function(speedOfSound) {
 };
 
 
-module.exports = ResonanceAudio;
+export default ResonanceAudio;

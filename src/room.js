@@ -23,9 +23,9 @@
 
 
 // Internal dependencies.
-const LateReflections = require('./late-reflections.js');
-const EarlyReflections = require('./early-reflections.js');
-const Utils = require('./utils.js');
+import LateReflections from './late-reflections.js'
+import EarlyReflections from './early-reflections.js'
+import Utils from './utils.js'
 
 
 /**
@@ -341,4 +341,4 @@ Room.prototype.getDistanceOutsideRoom = function(x, y, z) {
 };
 
 
-module.exports = Room;
+export default Room;

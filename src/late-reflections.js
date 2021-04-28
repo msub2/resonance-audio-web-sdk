@@ -22,7 +22,7 @@
 'use strict';
 
 // Internal dependencies.
-const Utils = require('./utils.js');
+import Utils from './utils.js'
 
 
 /**
@@ -213,4 +213,4 @@ LateReflections.prototype.setDurations = function(durations) {
 };
 
 
-module.exports = LateReflections;
+export default LateReflections;

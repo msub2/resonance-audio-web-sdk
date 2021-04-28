@@ -33,7 +33,7 @@
  * computed ((l + 1) * (l + 2) / 2 - 1) per elevation.
  * @type {Float32Array}
  */
-exports.SPHERICAL_HARMONICS =
+const SPHERICAL_HARMONICS =
 [
   [
     [0.000000, 0.000000, 0.000000, 1.000000, 1.000000, 1.000000],
@@ -765,28 +765,25 @@ exports.SPHERICAL_HARMONICS =
 
 
 /** @type {Number} */
-exports.SPHERICAL_HARMONICS_AZIMUTH_RESOLUTION =
-  exports.SPHERICAL_HARMONICS[0].length;
+const SPHERICAL_HARMONICS_AZIMUTH_RESOLUTION = SPHERICAL_HARMONICS[0].length;
 
 
 /** @type {Number} */
-exports.SPHERICAL_HARMONICS_ELEVATION_RESOLUTION =
-  exports.SPHERICAL_HARMONICS[1].length;
+const SPHERICAL_HARMONICS_ELEVATION_RESOLUTION = SPHERICAL_HARMONICS[1].length;
 
 
 /**
  * The maximum allowed ambisonic order.
  * @type {Number}
  */
-exports.SPHERICAL_HARMONICS_MAX_ORDER =
-  exports.SPHERICAL_HARMONICS[0][0].length / 2;
+ const SPHERICAL_HARMONICS_MAX_ORDER = SPHERICAL_HARMONICS[0][0].length / 2;
 
 
 /**
  * Pre-computed per-band weighting coefficients for producing energy-preserving
  * Max-Re sources.
  */
-exports.MAX_RE_WEIGHTS =
+const MAX_RE_WEIGHTS =
 [
   [1.000000, 1.000000, 1.000000, 1.000000],
   [1.000000, 1.000000, 1.000000, 1.000000],
@@ -1152,4 +1149,13 @@ exports.MAX_RE_WEIGHTS =
 
 
 /** @type {Number} */
-exports.MAX_RE_WEIGHTS_RESOLUTION = exports.MAX_RE_WEIGHTS.length;
+const MAX_RE_WEIGHTS_RESOLUTION = MAX_RE_WEIGHTS.length;
+
+export default {
+  SPHERICAL_HARMONICS,
+  SPHERICAL_HARMONICS_AZIMUTH_RESOLUTION,
+  SPHERICAL_HARMONICS_ELEVATION_RESOLUTION,
+  SPHERICAL_HARMONICS_MAX_ORDER,
+  MAX_RE_WEIGHTS,
+  MAX_RE_WEIGHTS_RESOLUTION
+}

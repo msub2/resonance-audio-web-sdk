@@ -23,10 +23,10 @@
 
 
 // Internal dependencies.
-const Directivity = require('./directivity.js');
-const Attenuation = require('./attenuation.js');
-const Encoder = require('./encoder.js');
-const Utils = require('./utils.js');
+import Directivity from './directivity.js'
+import Attenuation from './attenuation.js'
+import Encoder from './encoder.js'
+import Utils from './utils.js'
 
 
 /**
@@ -354,4 +354,4 @@ function _computeDistanceOutsideRoom(distance) {
 }
 
 
-module.exports = Source;
+export default Source;

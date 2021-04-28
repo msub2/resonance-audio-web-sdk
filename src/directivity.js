@@ -22,7 +22,7 @@
 'use strict';
 
 // Internal dependencies.
-const Utils = require('./utils.js');
+import Utils from './utils.js'
 
 
 /**
@@ -129,4 +129,4 @@ Directivity.prototype.setPattern = function(alpha, sharpness) {
 };
 
 
-module.exports = Directivity;
+export default Directivity;

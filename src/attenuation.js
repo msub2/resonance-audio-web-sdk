@@ -23,7 +23,7 @@
 
 
 // Internal dependencies.
-const Utils = require('./utils.js');
+import Utils from './utils.js'
 
 
 /**
@@ -159,4 +159,4 @@ Attenuation.prototype.setRolloff = function(rolloff) {
 };
 
 
-module.exports = Attenuation;
+export default Attenuation;
