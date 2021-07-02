@@ -1,7 +1,7 @@
 {
   "name": "@3den.club/resonance-audio",
   "version": "1.0.0",
-  "description": "Resonance Audio library: Spatial Audio for the Web",
+  "description": "3DEN.CLUB fork of Resonance Audio library: Spatial Audio for the Web",
   "main": "build/resonance-audio.js",
   "keywords": [
     "spatial audio",
